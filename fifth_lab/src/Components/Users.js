@@ -9,11 +9,9 @@ function Users() {
     }
 
     const cargandoUsuariosWeb = async () => {
-        console.log('Metodo cargando Usuario');
-        let datos = await fetch('https://jsonplaceholder.typicode.com/posts')
+        let datos = await fetch('https://jsonplaceholder.typicode.com/comments')
             .then(response => response.json());
         setListaUsuarios(datos);
-        console.log('datos-->',datos)
 
     }
 
